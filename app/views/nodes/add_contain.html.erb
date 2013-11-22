@@ -1,0 +1,5 @@
+<h2>New Contain relationship for <%= @node.title %></h2>
+<div><%= @node.title %> contains...</div>
+<% @nodes.each do |node| %>
+  <div><%= link_to node.title, contain_path(@node, node) %></div>
+<% end %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Node</h2>
+<table>
+  <tr>
+    <td>Title</td>
+    <td><%= @node.title %></td>
+  </tr>
+    
+</table>    
+
+<%= link_to 'Edit', edit_node_path(@node) %> |
+<%= link_to 'Back', nodes_path %>
+<%= link_to 'New Related Node', add_contain_node_path(@node) %>
+
